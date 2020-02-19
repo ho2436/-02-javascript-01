@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>operator2</title>
+</head>
+<body>
+    <style>
+        #num{
+            width:200px;
+            height:200px;
+            background-color: turquoise;
+            border-radius: 50%;
+            text-align: center;
+            line-height: 200px;
+            font-size: 60px;
+            font-family: arial;
+            font-weight: 900;
+            user-select: none;
+        }
+        .test{
+            width: 150px;
+            height: 150px;
+            border-radius: 20px;
+            background-color: blueviolet;
+            text-align: center;
+            line-height: 140px;
+            font-size: 80px;
+            font-weight: bold;
+            user-select: none;
+            
+        }
+        ul{
+            list-style: none;
+            width: 200px;
+            margin: 0;
+            padding: 0;
+            font-size: 0;
+            user-select: none;
+        }
+        li{display: inline-block;
+            width: 50px;
+            height: 20px;
+            background-color:cornflowerblue;
+            border-radius: 10px;
+            text-align: center;
+            font-size: 10px;
+            
+        }
+    </style>
+    <div id="num">0</div>
+    
+    <div id="box"></div>
+    <div class="test">1
+    </div>
+    <ul class="tool">
+        <li>+</li>
+        <li>-</li>
+        <li>*(2로)</li>
+        <li>/(2로)</li>
+    </ul>
+    <script>
+        var z ="<br>";
+        
+        var a = 20;
+        a = a+20;
+        a = a+20;
+        a += 20;
+        document.write(a);
+        
+        a = '';
+        a += '*';
+        a += '*';
+        a += '*';
+        a += '*';
+        document.write(a);
+
+        var b = 1;
+        b += "1";
+        document.write(z+ b,'문자 1을 더해서 문자취급중');
+        b += 10;
+        document.write(z+b);
+        b -= 1000;
+        document.write(z+b,'숫자 1000을 빼서 숫자취급');
+        b +=  190;
+        document.write(z+b);
+        
+        var c = 10;
+        c+=1;
+        c+=1;
+        c+=1;
+        c+=1;
+        c++;
+        c++;
+        c++;
+        c++;
+        c++;
+        c++;
+        c /= 2;
+        document.write(c);
+        
+        
+        
+        var num = document.querySelector('#num');
+        var nn = 0;
+        
+        num.addEventListener('click',function(){
+            
+            
+            nn++;
+           num.innerHTML = nn;
+            
+        })
+        var test =document.querySelector('.test');
+        var Q1 = document.querySelector('.tool li:nth-child(1)');
+        var Q2 = document.querySelector('.tool li:nth-child(2)');
+        var Q3 = document.querySelector('.tool li:nth-child(3)');
+        var Q4 = document.querySelector('.tool li:nth-child(4)');
+        var tnum= 1;
+        
+        Q1.addEventListener('click',function(){
+            
+            tnum++;
+            test.innerHTML = tnum;
+            
+            
+            
+        })
+        Q2.addEventListener('click',function(){
+            
+            tnum--;
+            test.innerHTML = tnum;
+            
+            
+            
+        })
+        Q3.addEventListener('click',function(){
+            
+            tnum**2;
+            test.innerHTML = tnum**2;
+            
+            
+            
+        })
+        Q4.addEventListener('click',function(){
+            
+            tnum  /= 2;
+            test.innerHTML = tnum;
+            
+            
+            
+        })
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+    </script>
+</body>
+</html>

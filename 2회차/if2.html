@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>if2</title>
+</head>
+<body>
+    
+    <script>
+    
+        /*
+        
+         if(금도끼 === 니도끼){
+            산신령(화를내며 돌아감)
+         }else if(은도끼 === 니도끼){
+            산신령(아무것도 안주고 돌아감)
+         }else if(쇠도끼 === 니도끼){
+            산신령(세 도끼를 다 줌)
+         }else{
+            산신령(어이없어하면서 돌아감)
+         }
+        
+        */
+    var month = prompt('12달 중 몇번째 달입니까?');
+        if(month >=9 && month<=11){
+            document.write(month,'월로<br>')
+            document.write('가을입니다.<br><br>')
+        }else if(month >=6 && month<=8){
+            document.write(month,'월로<br>')
+            document.write('여름입니다.<br><br>')
+        }else if(month >=3 && month<=5){
+            document.write(month,'월로<br>')
+            document.write('봄입니다.<br><br>')
+        }else if(month >=1 && month<=2 || month == 12){
+            //month==1 || month ==2 || month==12
+            document.write(month,'월로<br>')
+            document.write('겨울입니다.<br><br>')
+        }else{
+            document.write(month,'월로<br>')
+            document.write('잘못 입력하셨습니다.<br><br>')
+        }
+        
+    var age = prompt('입장료 확인을 위해 나이를 알려주세요?');
+        var result = 5000;
+        if(age <8){
+            document.write(age,'세로<br>')
+            document.write('무료입니다.<br><br>')
+        }else if(age<60){
+            document.write(age,'세로<br>')
+            document.write('입장료는'+result+'원입니다.<br><br>')
+        }else{
+            document.write(age,'세로<br>')
+            document.write('입장료는'+result/2+
+                           '입니다.<br><br>')
+        }
+        
+        
+    var myhigh = prompt('당신의 키는?');
+    var myweith = prompt('당신의 몸무게는?');
+        var calc1 = ((myhigh - 100)*0.9);
+        var calc2 = (myweith / calc1);
+        document.write("당신의 키 ",myhigh,'cm');
+        document.write("<br>당신의 체중 ",myweith,'kg');
+        if(calc2 > 1.2){ 
+            document.write("<br>당신의 표준체중은 ",calc1)
+            
+            document.write("<br>체중과 표준체중의비는 ",calc2)
+            
+            document.write('<br><br>과체중입니다.<br><br>')}else if(calc2 < 0.8){ document.write("<br>당신의 표준체중은 ",calc1)
+            
+            document.write("<br>체중과 표준체중의비는 ",calc2)
+            document.write('<br><br>저체중입니다.<br><br>')}else if(calc2 < 0.9){document.write("<br>당신의 표준체중은 ",calc1)
+            
+            document.write("<br>체중과 표준체중의비는 ",calc2) 
+            document.write('<br><br>미용체중입니다.<br><br>')}else{document.write("<br>당신의 표준체중은 ",calc1)
+            
+            document.write("<br>체중과 표준체중의비는 ",calc2)
+            document.write('<br><br>정상체중입니다.')       };  
+        
+    </script>
+</body>
+</html>

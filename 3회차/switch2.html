@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>switch2</title>
+</head>
+<body>
+    
+    <script>
+
+        /*
+        1.자주가는 포털사이트를 묻고
+        구글인 경우 -> https://google.com
+        네이트인 경우->https://nate.com
+        다음인 경우->https://daum.net
+
+네이버인 경우->https://naver.com
+    디폴트0< 구글 네이버 다음 네이트중 입력해주세요     
+        
+        */
+        var a = prompt("자주 가는 포탈사트이를 적어주세요.");
+        var result; 
+        var result2;
+        
+        switch(a){
+            case '구글' : result2 ="https://google.com" ;       break;   
+            case 'google' : result2 ="https://google.com" ;       break;   
+            case '네이트' : result2 ="https://nate.com" ;    
+                break;
+            case '네이버' : result2 ="https://naver.com" ;    
+                break;
+            case '다음' : result2 ="https://daum.net" ;    
+                break;
+            default : result ='구글 네이버 다음 네이트 중에서 입력해세주요.';
+        }        
+        document.write(result);
+        
+        if(result2){
+         location.replace(result2);
+        }
+        //location.replace('http://naver.com');
+    </script>
+    
+    
+</body>
+</html>

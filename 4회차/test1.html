@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>operator2</title>
+</head>
+<body>
+    <style>
+        .test{
+            width: 150px;
+            height: 150px;
+            border-radius: 20px;
+            background-color: blueviolet;
+            text-align: center;
+            line-height: 140px;
+            font-size: 80px;
+            font-weight: bold;
+            user-select: none;
+            position: absolute;
+            top: 150px;;
+            left: 20px;
+            
+            
+            
+        }
+        .test1{
+            width: 150px;
+            height: 50px;
+            border-radius: 20px;
+            background-color: skyblue;
+            text-align: center;
+            line-height: 140px;
+            font-size: 80px;
+            font-weight: bold;
+            user-select: none;
+            position: absolute;
+            top: 150px;;
+            left: 200px;
+            
+            
+            
+        }
+        ul{
+            position: absolute;
+            top: 310px;;
+            left: 20px;
+            
+            list-style: none;
+            width: 200px;
+            margin: 0;
+            padding: 0;
+            font-size: 0;
+            user-select: none;
+        }
+        li{display: inline-block;
+            width: 50px;
+            height: 20px;
+            background-color:cornflowerblue;
+            border-radius: 20px;
+            text-align: center;
+            font-size: 10px;
+            
+        }
+        .test0{
+            height: 300px;
+            width: 400px;
+            background-color: azure;
+            padding: 20px;
+            border-radius: 10px;
+            font-size: 20px;
+        }
+    </style>
+    <div class="test0">숫자세기놀이!<br>360을 만들려 한다.<br>아래 숫자도구를 가능한 적게 눌러 만드시오.</div>
+    <div class="test">1
+    </div>
+    <div class="test1"></div>
+    <ul class="tool">
+        <li>+</li>
+        <li>-</li>
+        <li>*(2로)</li>
+        <li>/(2로)</li>
+    </ul>
+    <script>
+        var z ="<br>";
+        var test =document.querySelector('.test');
+        var Q1 = document.querySelector('.tool li:nth-child(1)');
+        var Q2 = document.querySelector('.tool li:nth-child(2)');
+        var Q3 = document.querySelector('.tool li:nth-child(3)');
+        var Q4 = document.querySelector('.tool li:nth-child(4)');
+        var tnum= 1;
+        var test1 = document.querySelector('.test1')
+        
+        Q1.addEventListener('click',function(){
+            
+            tnum++;
+            test.innerHTML = tnum;
+            test1 = tnum;
+            
+            
+        })
+        Q2.addEventListener('click',function(){
+            
+            tnum--;
+            test.innerHTML = tnum;
+            test1 = tnum;
+            
+            
+        })
+        Q3.addEventListener('click',function(){
+            
+            tnum *= 2;
+            test.innerHTML = tnum;
+            test1 = tnum;
+            
+            
+        })
+        Q4.addEventListener('click',function(){
+            
+            tnum  /= 2;
+            test.innerHTML = tnum;
+            test1 = tnum;
+            
+            
+        })
+        
+        var test2 = (test1 == 512)
+        test1.innerHTML = test2;
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+    </script>
+</body>
+</html>

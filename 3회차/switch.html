@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>switch</title>
+</head>
+<body>
+   
+<!--   
+   
+   경품번호는?
+   만약 번호가 1111이면 -> 노트북 당첨
+   2222면 -> 청소기 당첨
+   3333면 -> 상품권 당첨
+   4444면 -> 아우디 당첨
+   5555면 -> 아이패드 당첨
+   
+   해당사항 없으면 -> 꽝입니다
+   
+   -->
+   <script>
+//        var a = prompt("경 품 번 호 입력해주세요.(4자리)");
+//        var result;
+//       
+//       
+//              if(a == 1111){
+//           document.write('축 노트북 축')}else if(a == 2222){
+//           document.write('축 청소기 축')}else if(a == 3333){     
+//           document.write('축 상품권 축')}else if(a == 4444){
+//           document.write('축 아우디 축')}else if(a == 5555){
+//           document.write('축 아이패드 축')}else{
+//           document.write('꽝꽝꽝 입니다.') }
+//    
+//    --------------------------예제
+//       var num = prompt('경품번호를 입력해주세요');
+//       var result;
+//       
+//        num = parseInt(num);
+//        switch(num){
+//            case 1111 : result = '노트북 당첨';
+//            break;
+//            case 2222 : result = '청소기 당첨';
+//            break;
+//            case 3333 : result = '상품권 당첨';
+//            break;
+//            case 4444 : result = '아우디당첨';
+//            break;
+//            case 5555 : result = '아이패드 당첨';
+//            break;
+//            default : result = '꽝입니다';
+//        }      
+//       
+//       document.write(result);
+//       ----------------------------
+       /*
+       
+       요일을 묻고
+       월 -> 아메리카노 1+1행사
+       화 -> 라떼 20% 할인
+       수 -> 초코쿠키 증정
+       목 -> 비오는 날 아메리카노 쿠폰 증정
+       금 -> 반려동물 동반시 간식증정
+       토 -> 주문배달시 배달비 제외
+       일 -> 어린이 방문시 쿠키증정
+       
+       */
+       var days = prompt('일주일 이벤트 요일을 입력해보세요.\n월화수목금토일');
+       
+       if(days.length >= 4){
+           alert('다시 입력하세요');
+       }
+       days = days[0];
+       var result2;
+       
+       switch(days){
+           case '월' : result2 = '아메리카노 1+1행사';
+               break;    
+           case '화' : result2 = '라떼 20% 할인';
+               break;    
+           case '수' : result2 = '초코쿠키 증정';
+               break;    
+           case '목' : result2 = '비오는 날 아메리카노 쿠폰 증정';
+               break;    
+           case '금' : result2 = '반려동물 동반시 간식증정';
+               break;    
+           case '토' : result2 = '주문배달시 배달비 제외';
+               break;    
+           case '일' : result2 = '어린이 방문시 쿠키증정';
+               break;    
+           default : result2 = '입력을 다시해주세요';
+       }
+        document.write(result2);   
+    </script>
+   
+   
+   
+   
+   
+    </body>
+</html>

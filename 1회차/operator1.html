@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>operatorrrrrrrrrr</title>
+</head>
+<body>
+    <script>
+    
+        //연산구문은 표현식의 일종 
+        
+        
+    /*
+    1. 숫자끼리 더하면 : 합산됨
+    2. 문자끼리 더하면 : 하나의 문자열로 합쳐짐
+    3. 문자와 다른데이터를 더하면 : 하나의 문자열로 합쳐짐
+    
+    4. boolean => true false
+       true : 켜져있음, on, 값이 존재함, 1
+       false : 꺼져있음, 값이 없음, 0
+    */
+        
+        var a= 1;
+        var b= 2;
+        document.write(a + b);
+        
+        var c = '학교종이';
+        var d = '땡땡땡';
+        document.write(c+d);
+        
+        var e = true;
+        var f = 123;
+        document.write(e + f);
+    
+     
+    /*
+    1. 숫자 - 숫자 = 숫자
+    2. 숫자 - 문자 = 연산이 되어서 숫자
+        :암시적 형변환 (문자가 숫자로 형태가 변환됨)
+        
+        NaN 연산할 수없음을 나타내는 키워드, 그자체로 숫자데이터이기도 함
+    */    
+        
+        var g = 200;
+        var h = '340';
+        document.write(h - g);
+        
+        
+        var i = 20;
+        var j = 30;
+        document.write(i*j);
+        
+        
+        var k = 40;
+        var l = 4;
+        document.write(k/l);
+        
+        
+        var m = 25;
+        var n = 4;
+        document.write(m % n);
+        
+        var z = '<br>';
+        var a1 = 10;
+        var b1 = 20;
+        document.write(z);
+        alert('하이',1)
+        document.write(a1 - b1);
+        document.write(z,a1 + b1 / a1);
+        document.write(z,a1 * b1 / a1);
+        document.write(z,a1 / b1 * a1);
+        document.write(z,a1+b1-a1*b1);
+        var c1 = "웁스";
+        document.write(z,'더하기   ',a1+c1);
+        document.write(z,'빼기      ',a1-c1);
+        document.write(z,'곱하기 ',a1*c1);
+        document.write(z,'나누기',a1/c1);
+        document.write(z,'결론 = 더하기 빼곤 전부 해결해 버릴려고 한다.(?)');
+        
+        document.write(z,'% = 떨어지는수 표시',z,a1 % b1,);
+        var A ="20000";
+        var B ="25000";
+        document.write(z,'물건값 ',A,'에서 낸 돈이',z,B,'라면 ',z,"거스름돈의 량은 ",B % A);
+    </script>
+</body>
+</html>

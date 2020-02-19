@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>if3</title>
+</head>
+<body>
+    <script>
+        
+//    var size = 260;
+//    
+//    var result;
+//        
+//        if(size>260){
+//            result = "재고가 없습나다";
+//        }else{
+//            result="재고가 있습니다"
+//        }
+//        
+//        document.write(result);
+        
+        
+    /*
+        1. 아이디를 묻고, 비밀번호를 물은 다음
+        2. yaho1234, 12341234 일 경우-> 로그인되었습니다
+         / 로그인에 실패하였습니다
+    */
+//        
+//        var con = confirm('진행하시겠습니까?');
+//        var logid = prompt("아이디를 입력하세요.")
+//        var logpw = prompt("암호를 입력하세요.");
+//        
+//        if(logid == 'yaho1234'){
+//            
+//            if(logpw =='12341234'){
+//                document.write('로그인 되었습니다')
+//            }else{
+//                document.write('암호가 틀렸습니다.')
+//            }
+//            
+//        }else{
+//            document.write('아이디가 틀렸습니다');
+//        }
+//        var result1;
+//    if(logid == 'yaho1234' && logpw == '12341234'){
+//        result1 = "로그인하셨습니다."
+//        
+//    }else if(logid == 'yaho1234'){
+//        result1="암호를 확인해주세요."
+//    }else if(logpw == '12341234'){
+//        result1="아이디를 확인해주세요."
+//    }else{
+//        result1="아이디및 암호를 확인해주세요."
+//    }
+//    document.write(result1);
+//    
+        
+        
+        
+        
+        /*삭제하시겠습니까? -> 확인-> 정말로 삭제하시겠습니까? -> 확인->삭제되었습니다
+        
+        취소->삭제가 취소되었습니다
+        */
+        var con = confirm('삭제하시겠습니까?');
+      
+        if(con == true){
+              var con2 = confirm('정말로 삭제하시겠습니까?'); 
+            if(con2 == true){
+                 document.write("삭제하셨습니다.")
+            }else{
+                 document.write("취소하셨습니다.")
+            }
+        }else{
+            document.write("취소하셨습니다.")
+        }       
+        
+        
+        
+    </script>
+</body>
+</html>
